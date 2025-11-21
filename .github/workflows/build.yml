@@ -33,6 +33,8 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: ${{ matrix.java }}
+      - name: Run Tests
+        run: ./mvnw clean verify
 
   security-scan:
     uses: jenkins-infra/jenkins-security-scan/.github/workflows/jenkins-security-scan.yaml@v2
