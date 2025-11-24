@@ -4,14 +4,14 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>4.51</version>
+    <version>4.52</version>
     <relativePath />
   </parent>
 
   <properties>
     <gitHubRepo>jenkinsci/${project.artifactId}</gitHubRepo>
-    <jenkins.version>2.332.3</jenkins.version>
-    <java.level>8</java.level>
+    <jenkins.version>2.361.4</jenkins.version>
+    <java.level>11</java.level>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <failsafeArgLine />
@@ -312,8 +312,8 @@
       <dependency>
         <!-- Pick up common dependencies for the selected LTS line: https://github.com/jenkinsci/bom#usage -->
         <groupId>io.jenkins.tools.bom</groupId>
-        <artifactId>bom-2.289.x</artifactId>
-        <version>1409.v7659b_c072f18</version>
+        <artifactId>bom-2.361.x</artifactId>
+        <version>2102.v854b_fec19c92</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
